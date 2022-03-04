@@ -26,18 +26,16 @@ p{
     color:grey;
     margin: 15px 0 20px 0;
 }
-section-p1{
+.section-p1{
     padding: 40px 80px;
 }
-section-m1{
+.section-m1{
     margin:40px 0;
 }
 body{
     width:100%;
 }
-button{
 
-}
 /*Navigation Bar*/
 .logo{
     width: 80px;
@@ -48,8 +46,12 @@ button{
     align-items: center;
     justify-content: space-between;
     padding:20px 80px;
-    background-color: rgb(32, 5, 151, 0.5);
+    background-color: rgb(185, 148, 78);
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index:999;
+    position: sticky;
+    top:0;
+    left:0;
 }
 #nav_bar{
     display:flex;
@@ -84,7 +86,9 @@ button{
 }
 /* Home Page*/
 #banner{
-    background-image: url("img/banner.png");
+    background-image: url("img/banner.jpeg");
+    min-width: 400px;
+    object-fit: cover;
     height: 90vh;
     width:100%;
     background-size:cover;
@@ -123,11 +127,41 @@ button{
     text-decoration:none;
     text-align:center;
     text-transform: uppercase;
-    
-
-
 }
 #banner button:hover{
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
-
+#banner button a{
+text-decoration: none;
+}
+/*feature Section*/
+#feat{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feat .box{
+    width:180px;
+    text-align:center;
+    padding:25px 15px;
+    box-shadow: 20px 20px 34px rgb(0, 0,0,0.3);
+    border:2px solid #cce7d0;
+    border-radius:4px;
+    margin:15px 0px;
+}
+#feat .box:hover{
+    box-shadow: 10px 10px 54px rgb(70,62,211,0.1);
+}
+#feat .box img{
+    width:100%;
+    margin-bottom:10px;
+}
+#feat .box h6{
+    display:inline-block;
+    padding:9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color:#fddde4;
+}
