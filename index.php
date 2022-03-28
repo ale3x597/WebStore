@@ -1,3 +1,41 @@
+<?php
+//start sesion for cart
+session_start();
+      require_once 'datab/component.php';
+      require_once 'datab/connect.php';
+//instance
+$database = new CreateDb("website","products");
+if(isset($_POST['add'])){
+  //print_r($_POST['pID'])
+  if(isset($_SESSION['cart'])){
+    $item_array_id = array_column($_SESSION['cart'],"pID");
+
+
+    if(in_array($_POST['pID'], $item_array_id)){
+      echo "<script>alert('Product has already been added.')</script>";
+      echo "<script>window.location = 'shop.php'</script>";
+    }else{
+      $count = count($_SESSION['cart']);
+      $item_array = array(
+        'pID' =>$_POST['pID']
+      );
+
+      $_SESSION['cart'][$count] = $item_array;
+
+    }
+
+  }else{
+    $item_array = array(
+      'pID' =>$_POST['pID']
+    );
+    //create new session variable
+    $_SESSION['cart'][0] = $item_array;
+    print_r($_SESSION['cart']);
+  }
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

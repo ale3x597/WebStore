@@ -77,6 +77,8 @@ if(isset($_POST['add'])){
            ?>
         </div>
       </div>
+
+      
       <footer class="section-p1">
         <img src="img/temp_logo.png" alt="Company Logo, shirt surf">
        <div class="foot">
