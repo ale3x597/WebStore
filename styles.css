@@ -124,6 +124,7 @@ body {
   z-index: -1;
 }
 
+
 #nav_bar button:hover:after {
   transform: translate(0, 0);
 }
@@ -141,6 +142,10 @@ body {
   .button-56 {
     padding: 0 40px;
   }
+}
+#mobil{
+  display:none;
+  align-items:center;
 }
 
 /* Home Page*/
@@ -350,4 +355,156 @@ footer {
 }
 footer img{
   width:100px;
+}
+
+/*Media Quiery 
+this code is me working on making our webpage look good on smaller screens, but it is still a work in progress
+ <div id="mobil">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+   </div>
+  the html goes after the navbar
+@media(max-width:799px){
+  #nav_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position:fixed;
+    top:0;
+    right:-300px;
+    height:100vh;
+    width:300px;
+    background-color: blue;
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.2);
+    padding:80px 0 0 10px;
+  }
+  #nav_bar li{
+    margin-bottom: 35px;
+  }
+  #mobil{
+    display:flex;
+    align-items:center;
+  }
+  #mobil i{
+    color:black;
+    font-size: 24px;
+    padding-left:20px;
+  }
+}
+*/
+/*shop page */
+
+/*reviews page */
+#review-section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(185, 148, 78);
+}
+.wrapper {
+  padding: 20px;
+  background: #FFF;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  width: 600px;
+  min-height: 400px;
+  margin: 20px 0;
+}
+
+.wrapper .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.wrapper .form .row .input-group {
+  padding: 0 10px;
+  display: block;
+}
+
+.wrapper .form .row .input-group:first-child {
+  padding-left: 0;
+}
+
+.wrapper .form .row .input-group:last-child {
+  padding-right: 0;
+}
+
+.wrapper .form .input-group {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.wrapper .form .input-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.wrapper .form .input-group .btn {
+  margin: 20px 0;
+  display: block;
+  padding: .7rem 2rem;
+  opacity: .8;
+  color: #FFF;
+  background:#dfa21e;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: .3s ease-in;
+}
+
+.wrapper .form .input-group .btn:hover {
+  opacity: 1;
+}
+
+.wrapper .form .input-group input, .wrapper .form .input-group textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dfa21e;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.wrapper .form .input-group.textarea {
+  height: 200px;
+}
+
+.wrapper .form .input-group.textarea textarea {
+  resize: none;
+}
+
+.wrapper .prev-comments {
+  margin-top: 50px;
+}
+
+.wrapper .prev-comments .single-item {
+  background: #FFF;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  padding: 10px 20px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.wrapper .prev-comments .single-item h4 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.wrapper .prev-comments .single-item a {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #111;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.wrapper .prev-comments .single-item p {
+  font-size: .9rem;
+  color: #111;
 }

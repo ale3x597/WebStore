@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'head.php'; ?>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+   
 </head>
 
 <body>
+    
     <section id="header">
         <a href="#"><img src="img/temp_logo.png" class="logo"></a>
         <div>
             <ul id="nav_bar">
                 <li><a class="active" href="index.html">Home</a> </li>
-                <li><a href="shop.html">Shop</a> </li>
-                <li><a href="reviews.html">Reviews</a> </li>
+                <li><a href="shop.php">Shop</a> </li>
+                <li><a href="reviews.php">Reviews</a> </li>
                 <li><a href="about.html">About</a> </li>
-                <li><a href="contact.html">Contact</a> </li>
-                <li><a href="cart.html"><img src="img/bag.png"></a> </li>
-
+                <li><button><a class="but1" href="cart.php">Cart</a> </li>
             </ul>
         </div>
+       
+       
+         
+       
     </section>
     <section id="banner">
         <h4>Presenting:</h4>
         <h2>Super Deals</h2>
         <h1>On All Products</h1>
         <p>30% off! Our Best Products</p>
-        <button><a href="shop.html">Shop Now!</a></button>
+        <button class="shop"><a href="shop.html">Shop Now!</a></button>
     </section>
 
     <section id="feat" class="section-p1">
@@ -60,12 +70,8 @@
                     <span>Pengfei</span>
                     <h5>Pengfei Short Sleeve button down</h5>
                     <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star">4.5</i>
+                      
                     </div>
                     <h4>$35</h4>
                 </div>
@@ -77,12 +83,8 @@
                     <span>Pengfei</span>
                     <h5>Pengfei Short Sleeve button down</h5>
                     <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star">4.5</i>
+                        
                     </div>
                     <h4>$35</h4>
                 </div>
@@ -94,12 +96,8 @@
                     <span>Pengfei</span>
                     <h5>Pengfei Short Sleeve button down</h5>
                     <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star">4.5</i>
+                       
                     </div>
                     <h4>$35</h4>
                 </div>
@@ -111,80 +109,8 @@
                     <span>Pengfei</span>
                     <h5>Pengfei Short Sleeve button down</h5>
                     <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$35</h4>
-                </div>
-                <a href="cart.html" class="cart"><img src="img/cart.png" alt="shopping cart" ></a>
-            </div>
-            <div class="pro">
-                <img class="img1" src="img/prod-img/prod1.jpg" alt="blue buttom down shirt">
-                <div class="disc">
-                    <span>Pengfei</span>
-                    <h5>Pengfei Short Sleeve button down</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$35</h4>
-                </div>
-                <a href="cart.html" class="cart"><img src="img/cart.png" alt="shopping cart" ></a>
-            </div>
-            <div class="pro">
-                <img class="img1" src="img/prod-img/prod1.jpg" alt="blue buttom down shirt">
-                <div class="disc">
-                    <span>Pengfei</span>
-                    <h5>Pengfei Short Sleeve button down</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$35</h4>
-                </div>
-                <a href="cart.html" class="cart"><img src="img/cart.png" alt="shopping cart" ></a>
-            </div>
-            <div class="pro">
-                <img class="img1" src="img/prod-img/prod1.jpg" alt="blue buttom down shirt">
-                <div class="disc">
-                    <span>Pengfei</span>
-                    <h5>Pengfei Short Sleeve button down</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$35</h4>
-                </div>
-                <a href="cart.html" class="cart"><img src="img/cart.png" alt="shopping cart" ></a>
-            </div>
-            <div class="pro">
-                <img class="img1" src="img/prod-img/prod1.jpg" alt="blue buttom down shirt">
-                <div class="disc">
-                    <span>Pengfei</span>
-                    <h5>Pengfei Short Sleeve button down</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star">4.5</i>
+                        
                     </div>
                     <h4>$35</h4>
                 </div>
@@ -195,6 +121,25 @@
 
     </section>
 
+    <section id="ad" class="section-m1">
+        <h2>All the Labels You Love</h2>
+        <button class="shop"><a href="shop.html">Shop Now!</a></button>
+
+    </section>
+
     <script src="script.js"></script>
+
+<footer class="section-p1">
+    <img src="img/temp_logo.png" alt="Company Logo, shirt surf">
+   <div class="foot">
+      
+       <p>University of North Carolina at Pembroke, Pembroke, North Carolina 28372</p>
+      
+       
+
+   </div>
+</footer>
+
 </body>
+</html>
 </html>

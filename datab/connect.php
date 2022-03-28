@@ -10,6 +10,6 @@ try{
     echo "connected successfully";
 }
 catch(PDOException $e){
-    die("Something Went Wrong With DataBase. Please Try Again Later")
+    die("Something Went Wrong With DataBase. Please Try Again Later");
 }
 ?>
